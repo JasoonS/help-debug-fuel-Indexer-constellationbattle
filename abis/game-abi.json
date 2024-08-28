@@ -1,0 +1,1808 @@
+{
+  "programType": "contract",
+  "specVersion": "1",
+  "encodingVersion": "1",
+  "concreteTypes": [
+    {
+      "type": "()",
+      "concreteTypeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+    },
+    {
+      "type": "(enum std::option::Option<struct Monster>, enum std::option::Option<struct Fruit>, enum std::option::Option<struct Constellation>, enum std::option::Option<struct Accelerator>, struct EpochRef, struct CurrentBonus)",
+      "concreteTypeId": "eb840c248bf08c3bf01ac03f7127033ef3bdea0fc17eb1a60d81db806b00f8e2",
+      "metadataTypeId": 2
+    },
+    {
+      "type": "(enum std::option::Option<u64>, enum std::option::Option<u64>)",
+      "concreteTypeId": "056d5afa8ee0a17f596b8404a16a5a60c1d2ae65d2e27e4c17ceacfc186ce20d",
+      "metadataTypeId": 1
+    },
+    {
+      "type": "(u64, u64)",
+      "concreteTypeId": "41bd1a98f0a59642d8f824c805b798a5f268d1f7d05808eb05c4189c493f1be0",
+      "metadataTypeId": 0
+    },
+    {
+      "type": "b256",
+      "concreteTypeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+    },
+    {
+      "type": "bool",
+      "concreteTypeId": "b760f44fa5965c2474a3b471467a22c43185152129295af588b022ae50b50903"
+    },
+    {
+      "type": "enum AmountError",
+      "concreteTypeId": "c6684d3c71300bce2fad6355482449968f0af296ea9e14b6f94b81db16abe2b5",
+      "metadataTypeId": 3
+    },
+    {
+      "type": "enum AssetError",
+      "concreteTypeId": "1cdeb8a050c18c100950e5790e7bc401ceeef73fe308b42d02dc93819ddc1646",
+      "metadataTypeId": 4
+    },
+    {
+      "type": "enum AuthorizationError",
+      "concreteTypeId": "8601bf206eb343a46c6b13f30a0bc7b484673024f54a69bdc6f2f963b3b27d59",
+      "metadataTypeId": 5
+    },
+    {
+      "type": "enum AvailableError",
+      "concreteTypeId": "bc7a028fc8dcaaae412e6088d14ab29b11edd8458fb4dabd021e91c9a21092a3",
+      "metadataTypeId": 6
+    },
+    {
+      "type": "enum MintError",
+      "concreteTypeId": "1e37ad54df4781a840b85f3256a49d25755de400f8edcd3110c587f14639d4a4",
+      "metadataTypeId": 7
+    },
+    {
+      "type": "enum TimeError",
+      "concreteTypeId": "3a2334616701fa0f139f7ef6a5c9e0ab9404382cd40ab2055170aaa12b4164b7",
+      "metadataTypeId": 8
+    },
+    {
+      "type": "enum std::identity::Identity",
+      "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335",
+      "metadataTypeId": 9
+    },
+    {
+      "type": "enum std::option::Option<struct Market>",
+      "concreteTypeId": "0305d92a544bc802089928ebd8103aff0cb3499141048cb42efcb48b17b83b1d",
+      "metadataTypeId": 10,
+      "typeArguments": [
+        "f534b2f13175c7ad8e368a259c8dcc778f14e59d184ecf3053f5ac5ef34516f0"
+      ]
+    },
+    {
+      "type": "enum std::option::Option<u64>",
+      "concreteTypeId": "d852149004cc9ec0bbe7dc4e37bffea1d41469b759512b6136f2e865a4c06e7d",
+      "metadataTypeId": 10,
+      "typeArguments": [
+        "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+      ]
+    },
+    {
+      "type": "struct BattleEvent",
+      "concreteTypeId": "f64d2fe1b5016404ed7e27371dcd66f5a29e0471eef5ead9c05262757e56b69b",
+      "metadataTypeId": 14
+    },
+    {
+      "type": "struct BonusList",
+      "concreteTypeId": "e123ace73a17f34e83d338ea6055ec3c348266d49e533e785abee4e769e6deb4",
+      "metadataTypeId": 15
+    },
+    {
+      "type": "struct DeListEvent",
+      "concreteTypeId": "c41b9c739fafd6dbee4ed25d1aaea8aee5c351d47d056daa3332e330445a8b65",
+      "metadataTypeId": 18
+    },
+    {
+      "type": "struct EnterPoolEvent",
+      "concreteTypeId": "e06b63c3583fd598691ff6a17c549719c04c002c64e39f94c9802ecaee6dd2d1",
+      "metadataTypeId": 19
+    },
+    {
+      "type": "struct ListEvent",
+      "concreteTypeId": "a398c5cc65b4c0deb5de4380c6f0f73e1e1a0f7001de1c45cff317f258f635e7",
+      "metadataTypeId": 22
+    },
+    {
+      "type": "struct Market",
+      "concreteTypeId": "f534b2f13175c7ad8e368a259c8dcc778f14e59d184ecf3053f5ac5ef34516f0",
+      "metadataTypeId": 23
+    },
+    {
+      "type": "struct UpdateWeightPoolEvent",
+      "concreteTypeId": "6bf8f6d0b7cd6cbc7de53d2cf8459f9fe0a9497b531e6d6c7f063049eebaef8b",
+      "metadataTypeId": 25
+    },
+    {
+      "type": "struct std::vec::Vec<struct BonusList>",
+      "concreteTypeId": "84bd89d5e11dc133d005c462f5231e06e0beb91c72553e7bdc44ce05b4fa48f1",
+      "metadataTypeId": 29,
+      "typeArguments": [
+        "e123ace73a17f34e83d338ea6055ec3c348266d49e533e785abee4e769e6deb4"
+      ]
+    },
+    {
+      "type": "u16",
+      "concreteTypeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+    },
+    {
+      "type": "u64",
+      "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+    },
+    {
+      "type": "u8",
+      "concreteTypeId": "c89951a24c6ca28c13fd1cfdc646b2b656d69e61a92b91023be7eb58eb914b6b"
+    }
+  ],
+  "metadataTypes": [
+    {
+      "type": "(_, _)",
+      "metadataTypeId": 0,
+      "components": [
+        {
+          "name": "__tuple_element",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "(_, _)",
+      "metadataTypeId": 1,
+      "components": [
+        {
+          "name": "__tuple_element",
+          "typeId": 10,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+            }
+          ]
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": 10,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "(_, _, _, _, _, _)",
+      "metadataTypeId": 2,
+      "components": [
+        {
+          "name": "__tuple_element",
+          "typeId": 10,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": 24
+            }
+          ]
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": 10,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": 21
+            }
+          ]
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": 10,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": 16
+            }
+          ]
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": 10,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": 13
+            }
+          ]
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": 20
+        },
+        {
+          "name": "__tuple_element",
+          "typeId": 17
+        }
+      ]
+    },
+    {
+      "type": "enum AmountError",
+      "metadataTypeId": 3,
+      "components": [
+        {
+          "name": "NeedAboveZero",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "AmountNotAllow",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        }
+      ]
+    },
+    {
+      "type": "enum AssetError",
+      "metadataTypeId": 4,
+      "components": [
+        {
+          "name": "InsufficientPayment",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "IncorrectAssetSent",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        }
+      ]
+    },
+    {
+      "type": "enum AuthorizationError",
+      "metadataTypeId": 5,
+      "components": [
+        {
+          "name": "SenderNotOwner",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        }
+      ]
+    },
+    {
+      "type": "enum AvailableError",
+      "metadataTypeId": 6,
+      "components": [
+        {
+          "name": "NotAvailable",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        }
+      ]
+    },
+    {
+      "type": "enum MintError",
+      "metadataTypeId": 7,
+      "components": [
+        {
+          "name": "AlreadyMinted",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "FreeMintNotOpen",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        }
+      ]
+    },
+    {
+      "type": "enum TimeError",
+      "metadataTypeId": 8,
+      "components": [
+        {
+          "name": "NotEnoughTime",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "Expiry",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        }
+      ]
+    },
+    {
+      "type": "enum std::identity::Identity",
+      "metadataTypeId": 9,
+      "components": [
+        {
+          "name": "Address",
+          "typeId": 26
+        },
+        {
+          "name": "ContractId",
+          "typeId": 27
+        }
+      ]
+    },
+    {
+      "type": "enum std::option::Option",
+      "metadataTypeId": 10,
+      "components": [
+        {
+          "name": "None",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "Some",
+          "typeId": 11
+        }
+      ],
+      "typeParameters": [
+        11
+      ]
+    },
+    {
+      "type": "generic T",
+      "metadataTypeId": 11
+    },
+    {
+      "type": "raw untyped ptr",
+      "metadataTypeId": 12
+    },
+    {
+      "type": "struct Accelerator",
+      "metadataTypeId": 13,
+      "components": [
+        {
+          "name": "eight_add",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "sixteen_add",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "twentyfour_add",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        }
+      ]
+    },
+    {
+      "type": "struct BattleEvent",
+      "metadataTypeId": 14,
+      "components": [
+        {
+          "name": "winer",
+          "typeId": 9
+        },
+        {
+          "name": "loser",
+          "typeId": 9
+        },
+        {
+          "name": "winer_back",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "winer_win",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "loser_get",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "epoch",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "id",
+          "typeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        },
+        {
+          "name": "time",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct BonusList",
+      "metadataTypeId": 15,
+      "components": [
+        {
+          "name": "epoch_should_bonus",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "epoch_total_share",
+          "typeId": 10,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+            }
+          ]
+        },
+        {
+          "name": "my_share_bonus",
+          "typeId": 10,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+            }
+          ]
+        },
+        {
+          "name": "epoch",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct Constellation",
+      "metadataTypeId": 16,
+      "components": [
+        {
+          "name": "aries",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "taurus",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "gemini",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "cancer",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "leo",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "virgo",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "libra",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "scorpio",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "sagittarius",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "capricornus",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "aquarius",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "pisces",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "zodiac",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "universal",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        }
+      ]
+    },
+    {
+      "type": "struct CurrentBonus",
+      "metadataTypeId": 17,
+      "components": [
+        {
+          "name": "epoch_should_bonus",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "epoch_total_share",
+          "typeId": 10,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+            }
+          ]
+        },
+        {
+          "name": "my_share_bonus",
+          "typeId": 10,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+            }
+          ]
+        },
+        {
+          "name": "left_bonus",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct DeListEvent",
+      "metadataTypeId": 18,
+      "components": [
+        {
+          "name": "owner",
+          "typeId": 9
+        },
+        {
+          "name": "constella",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "epoch",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "id",
+          "typeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        },
+        {
+          "name": "time",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct EnterPoolEvent",
+      "metadataTypeId": 19,
+      "components": [
+        {
+          "name": "owner",
+          "typeId": 9
+        },
+        {
+          "name": "weight",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "epoch",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "time",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct EpochRef",
+      "metadataTypeId": 20,
+      "components": [
+        {
+          "name": "airdrop_phase",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "epoch",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "epoch_time",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "mypoint",
+          "typeId": 10,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+            }
+          ]
+        },
+        {
+          "name": "my_battle_pool",
+          "typeId": 10,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+            }
+          ]
+        },
+        {
+          "name": "my_buy_coin",
+          "typeId": 10,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "struct Fruit",
+      "metadataTypeId": 21,
+      "components": [
+        {
+          "name": "apple",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "banana",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "ananas",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        }
+      ]
+    },
+    {
+      "type": "struct ListEvent",
+      "metadataTypeId": 22,
+      "components": [
+        {
+          "name": "owner",
+          "typeId": 9
+        },
+        {
+          "name": "ownergene",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "bonus",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "constella",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "epoch",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "id",
+          "typeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        },
+        {
+          "name": "time",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct Market",
+      "metadataTypeId": 23,
+      "components": [
+        {
+          "name": "owner",
+          "typeId": 9
+        },
+        {
+          "name": "ownergene",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "bonus",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "constella",
+          "typeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        },
+        {
+          "name": "epoch",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct Monster",
+      "metadataTypeId": 24,
+      "components": [
+        {
+          "name": "gene",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "starttime",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "genetime",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "cardtime",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "turntabletime",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "expiry",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "bonus",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct UpdateWeightPoolEvent",
+      "metadataTypeId": 25,
+      "components": [
+        {
+          "name": "owner",
+          "typeId": 9
+        },
+        {
+          "name": "weight",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "epoch",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "time",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct std::address::Address",
+      "metadataTypeId": 26,
+      "components": [
+        {
+          "name": "bits",
+          "typeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        }
+      ]
+    },
+    {
+      "type": "struct std::contract_id::ContractId",
+      "metadataTypeId": 27,
+      "components": [
+        {
+          "name": "bits",
+          "typeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        }
+      ]
+    },
+    {
+      "type": "struct std::vec::RawVec",
+      "metadataTypeId": 28,
+      "components": [
+        {
+          "name": "ptr",
+          "typeId": 12
+        },
+        {
+          "name": "cap",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "typeParameters": [
+        11
+      ]
+    },
+    {
+      "type": "struct std::vec::Vec",
+      "metadataTypeId": 29,
+      "components": [
+        {
+          "name": "buf",
+          "typeId": 28,
+          "typeArguments": [
+            {
+              "name": "",
+              "typeId": 11
+            }
+          ]
+        },
+        {
+          "name": "len",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "typeParameters": [
+        11
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "inputs": [],
+      "name": "add_accelerator",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "add_airdrop_phase",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_identity",
+          "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335"
+        }
+      ],
+      "name": "add_constellation_for_test",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_amount",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "airdrop_claim",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_use_styles",
+          "concreteTypeId": "c89951a24c6ca28c13fd1cfdc646b2b656d69e61a92b91023be7eb58eb914b6b"
+        },
+        {
+          "name": "_listid",
+          "concreteTypeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        }
+      ],
+      "name": "battle",
+      "output": "b760f44fa5965c2474a3b471467a22c43185152129295af588b022ae50b50903",
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "amount",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "buy_coin",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_styles",
+          "concreteTypeId": "c89951a24c6ca28c13fd1cfdc646b2b656d69e61a92b91023be7eb58eb914b6b"
+        },
+        {
+          "name": "_amount",
+          "concreteTypeId": "29881aad8730c5ab11d275376323d8e4ff4179aae8ccb6c13fe4902137e162ef"
+        }
+      ],
+      "name": "buy_fruit",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_amount",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "_styles",
+          "concreteTypeId": "c89951a24c6ca28c13fd1cfdc646b2b656d69e61a92b91023be7eb58eb914b6b"
+        }
+      ],
+      "name": "claim",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_amount",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "claim_battle_pool",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_epoch",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "claim_bonus",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "claim_constellation",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_identity",
+          "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335"
+        },
+        {
+          "name": "_airdrop_phase",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "amount",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "claim_point",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "combine_constellation",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_listid",
+          "concreteTypeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        }
+      ],
+      "name": "delist_constellation",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_amount",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "dev_claim",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_styles",
+          "concreteTypeId": "c89951a24c6ca28c13fd1cfdc646b2b656d69e61a92b91023be7eb58eb914b6b"
+        }
+      ],
+      "name": "feed_fruit",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "free_mint_monster",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "get_dev_airdrop_balance",
+      "output": "41bd1a98f0a59642d8f824c805b798a5f268d1f7d05808eb05c4189c493f1be0",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_epoch",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "get_lucky_banana_universal",
+      "output": "056d5afa8ee0a17f596b8404a16a5a60c1d2ae65d2e27e4c17ceacfc186ce20d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_listid",
+          "concreteTypeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        }
+      ],
+      "name": "get_market",
+      "output": "0305d92a544bc802089928ebd8103aff0cb3499141048cb42efcb48b17b83b1d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_identity",
+          "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335"
+        }
+      ],
+      "name": "get_my_info",
+      "output": "eb840c248bf08c3bf01ac03f7127033ef3bdea0fc17eb1a60d81db806b00f8e2",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_identity",
+          "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335"
+        },
+        {
+          "name": "_airdrop_phase",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "get_my_point",
+      "output": "d852149004cc9ec0bbe7dc4e37bffea1d41469b759512b6136f2e865a4c06e7d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_identity",
+          "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335"
+        }
+      ],
+      "name": "get_share_bonus_list",
+      "output": "84bd89d5e11dc133d005c462f5231e06e0beb91c72553e7bdc44ce05b4fa48f1",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_airdrop_phase",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "get_total_point",
+      "output": "d852149004cc9ec0bbe7dc4e37bffea1d41469b759512b6136f2e865a4c06e7d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_styles",
+          "concreteTypeId": "c89951a24c6ca28c13fd1cfdc646b2b656d69e61a92b91023be7eb58eb914b6b"
+        }
+      ],
+      "name": "list_constellation",
+      "output": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b",
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "lucky_turntable",
+      "output": "c89951a24c6ca28c13fd1cfdc646b2b656d69e61a92b91023be7eb58eb914b6b",
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "mint_monster",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "rebirth",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "regenerate_gene",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_asset_id",
+          "concreteTypeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        }
+      ],
+      "name": "set_asset_id",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_battle_price",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "set_battle_price",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_combine_price",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "set_combine_price",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_epoch_diff",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "set_epoch_diff",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_true_false",
+          "concreteTypeId": "b760f44fa5965c2474a3b471467a22c43185152129295af588b022ae50b50903"
+        }
+      ],
+      "name": "set_free_mint",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_apple_price",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "_banana_price",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "_ananas_price",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "set_fruit_price",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_gene_price",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "set_gene_price",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_lucky_price",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "set_lucky_price",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_monster_price",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "set_monster_price",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_indentity",
+          "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335"
+        }
+      ],
+      "name": "set_point_owner",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_contract_id",
+          "concreteTypeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        }
+      ],
+      "name": "set_random_contract",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_rebirth_price",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "set_rebirth_price",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_contract_id",
+          "concreteTypeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        }
+      ],
+      "name": "set_third_contract",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_contract_id",
+          "concreteTypeId": "7c5ee1cecf5f8eacd1284feb5f0bf2bdea533a51e2f0c9aabe9236d335989f3b"
+        }
+      ],
+      "name": "set_token_contract",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_token_price",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "set_token_price",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_styles",
+          "concreteTypeId": "c89951a24c6ca28c13fd1cfdc646b2b656d69e61a92b91023be7eb58eb914b6b"
+        }
+      ],
+      "name": "use_universal_card",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_styles",
+          "concreteTypeId": "c89951a24c6ca28c13fd1cfdc646b2b656d69e61a92b91023be7eb58eb914b6b"
+        }
+      ],
+      "name": "using_accelerator_card",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    }
+  ],
+  "loggedTypes": [
+    {
+      "logId": "13581170442862635694",
+      "concreteTypeId": "bc7a028fc8dcaaae412e6088d14ab29b11edd8458fb4dabd021e91c9a21092a3"
+    },
+    {
+      "logId": "9656209222076154788",
+      "concreteTypeId": "8601bf206eb343a46c6b13f30a0bc7b484673024f54a69bdc6f2f963b3b27d59"
+    },
+    {
+      "logId": "4189249671329348111",
+      "concreteTypeId": "3a2334616701fa0f139f7ef6a5c9e0ab9404382cd40ab2055170aaa12b4164b7"
+    },
+    {
+      "logId": "14296761939079990222",
+      "concreteTypeId": "c6684d3c71300bce2fad6355482449968f0af296ea9e14b6f94b81db16abe2b5"
+    },
+    {
+      "logId": "2080303076580887568",
+      "concreteTypeId": "1cdeb8a050c18c100950e5790e7bc401ceeef73fe308b42d02dc93819ddc1646"
+    },
+    {
+      "logId": "17747894352987907076",
+      "concreteTypeId": "f64d2fe1b5016404ed7e27371dcd66f5a29e0471eef5ead9c05262757e56b69b"
+    },
+    {
+      "logId": "7780239732579855548",
+      "concreteTypeId": "6bf8f6d0b7cd6cbc7de53d2cf8459f9fe0a9497b531e6d6c7f063049eebaef8b"
+    },
+    {
+      "logId": "16171128577654248856",
+      "concreteTypeId": "e06b63c3583fd598691ff6a17c549719c04c002c64e39f94c9802ecaee6dd2d1"
+    },
+    {
+      "logId": "14131060276219336411",
+      "concreteTypeId": "c41b9c739fafd6dbee4ed25d1aaea8aee5c351d47d056daa3332e330445a8b65"
+    },
+    {
+      "logId": "2177399524891787688",
+      "concreteTypeId": "1e37ad54df4781a840b85f3256a49d25755de400f8edcd3110c587f14639d4a4"
+    },
+    {
+      "logId": "11788389506312618206",
+      "concreteTypeId": "a398c5cc65b4c0deb5de4380c6f0f73e1e1a0f7001de1c45cff317f258f635e7"
+    }
+  ],
+  "messagesTypes": [],
+  "configurables": [
+    {
+      "name": "ADMIN",
+      "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335",
+      "offset": 189824
+    },
+    {
+      "name": "AIRDROP",
+      "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335",
+      "offset": 189864
+    },
+    {
+      "name": "ONEDAY",
+      "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0",
+      "offset": 189912
+    },
+    {
+      "name": "TWODAYS",
+      "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0",
+      "offset": 189928
+    },
+    {
+      "name": "THREEDAYS",
+      "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0",
+      "offset": 189920
+    },
+    {
+      "name": "FIVEDAYS",
+      "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0",
+      "offset": 189904
+    },
+    {
+      "name": "ADDEIGHT",
+      "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0",
+      "offset": 189800
+    },
+    {
+      "name": "ADDSIXTEEN",
+      "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0",
+      "offset": 189816
+    },
+    {
+      "name": "ADDONEDAY",
+      "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0",
+      "offset": 189808
+    }
+  ]
+}
