@@ -3,7 +3,7 @@ name: game
 ecosystem: fuel
 networks:
 - id: 0
-  start_block: 0
+  start_block: 3198731
   contracts:
   - name: game
     address:
@@ -13,18 +13,19 @@ networks:
     events:
     - name: ListEvent
       logId: '11788389506312618206'
-    - name: AvailableError
-      logId: '13581170442862635694'
     - name: BattleEvent
       logId: '17747894352987907076'
-    - name: TimeError
-      logId: '4189249671329348111'
-    - name: AuthorizationError
-      logId: '9656209222076154788'
     - name: UpdateWeightPoolEvent
       logId: '7780239732579855548'
     - name: DeListEvent
       logId: '14131060276219336411'
+    ### Note the below events are not used by the indexer, can remove if found not to be useful.
+    - name: AvailableError
+      logId: '13581170442862635694'
+    - name: TimeError
+      logId: '4189249671329348111'
+    - name: AuthorizationError
+      logId: '9656209222076154788'
     - name: AssetError
       logId: '2080303076580887568'
     - name: MintError
@@ -43,21 +44,22 @@ networks:
       logId: '437745219562681537'
     - name: ListEvent
       logId: '11788389506312618206'
-    - name: AuthorizationError
-      logId: '9656209222076154788'
     - name: DelistEvent
       logId: '16266037451125789909'
-    - name: AssetError
-      logId: '2080303076580887568'
     - name: NameRegisteredEvent
       logId: '5566286078492628248'
-    - name: MarketError
-      logId: '17908035269218563412'
-    - name: RegistrationValidityError
-      logId: '18060798146092746385'
     - name: NameExtendEvent
       logId: '3551850073516221795'
     - name: ResolvingEvent
       logId: '2886499177792137268'
     - name: BuyEvent
       logId: '7363501374152615753'
+    ### Note the below events are not used by the indexer, can remove if found not to be useful.
+    - name: AuthorizationError
+      logId: '9656209222076154788'
+    - name: AssetError
+      logId: '2080303076580887568'
+    - name: MarketError
+      logId: '17908035269218563412'
+    - name: RegistrationValidityError
+      logId: '18060798146092746385'
