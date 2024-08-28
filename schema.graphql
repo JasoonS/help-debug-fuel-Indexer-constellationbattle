@@ -1,88 +1,88 @@
-type Game_DeListEvent {
-    id: ID!
-    owner: ID!
-    constella: BigInt!
-    epoch: BigInt!
-    time: String! # Date
+type Game_ListEvent {
+  id: ID!
 }
 
-type Game_ListEvent {
-    id: ID!
-    owner: ID!
-    ownergene: BigInt!
-    bonus: BigInt!
-    constella: BigInt!
-    epoch: BigInt!
-    time: String! # Date
+type Game_AvailableError {
+  id: ID!
 }
 
 type Game_BattleEvent {
-    id: ID!
-    winer: ID!
-    loser: ID!
-    winer_back: BigInt!
-    winer_win: BigInt!
-    loser_get: BigInt!
-    epoch: BigInt!
-    time: String! # Date
+  id: ID!
 }
 
-type Game_EnterPoolEvent {
-    id: ID!
-    owner: ID!
-    weight: BigInt!
-    epoch: BigInt!
-    time: String! # Date
+type Game_TimeError {
+  id: ID!
+}
+
+type Game_AuthorizationError {
+  id: ID!
 }
 
 type Game_UpdateWeightPoolEvent {
-    id: ID!
-    owner: ID!
-    weight: BigInt!
-    epoch: BigInt!
-    time: String! # Date
+  id: ID!
+}
+
+type Game_DeListEvent {
+  id: ID!
+}
+
+type Game_AssetError {
+  id: ID!
+}
+
+type Game_MintError {
+  id: ID!
+}
+
+type Game_AmountError {
+  id: ID!
+}
+
+type Game_EnterPoolEvent {
+  id: ID!
+}
+
+type Name_NameTransferEvent {
+  id: ID!
+}
+
+type Name_ListEvent {
+  id: ID!
+}
+
+type Name_AuthorizationError {
+  id: ID!
+}
+
+type Name_DelistEvent {
+  id: ID!
+}
+
+type Name_AssetError {
+  id: ID!
+}
+
+type Name_NameRegisteredEvent {
+  id: ID!
+}
+
+type Name_MarketError {
+  id: ID!
+}
+
+type Name_RegistrationValidityError {
+  id: ID!
 }
 
 type Name_NameExtendEvent {
   id: ID!
-  addtime: BigInt!
-  name: String!
-  identity: ID!
 }
+
 type Name_ResolvingEvent {
   id: ID!
-  name: String!
-  identity: ID!
 }
-type Name_NameTransferEvent {
-  id: ID!
-  name: String!
-  from: ID!
-  to: ID!
-}
+
 type Name_BuyEvent {
   id: ID!
-  time: String! # Date
-  price: BigInt!
-  name: String!
-  buyer: ID!
-  seller: ID!
 }
-type Name_DelistEvent {
-  id: ID!
-  name: String!
-  identity: ID!
-}
-type Name_ListEvent {
-  id: ID!
-  name: String!
-  owner: ID!
-  price: BigInt!
-}
-type Name_NameRegisteredEvent {
-  id: ID!
-  starttime: String! # Date
-  expiry: String! # Date
-  name: String!
-  identity: ID!
-}
+
