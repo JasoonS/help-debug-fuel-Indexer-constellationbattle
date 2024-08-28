@@ -1,0 +1,793 @@
+{
+  "programType": "contract",
+  "specVersion": "1",
+  "encodingVersion": "1",
+  "concreteTypes": [
+    {
+      "type": "()",
+      "concreteTypeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+    },
+    {
+      "type": "enum AssetError",
+      "concreteTypeId": "1cdeb8a050c18c100950e5790e7bc401ceeef73fe308b42d02dc93819ddc1646",
+      "metadataTypeId": 1
+    },
+    {
+      "type": "enum AuthorizationError",
+      "concreteTypeId": "8601bf206eb343a46c6b13f30a0bc7b484673024f54a69bdc6f2f963b3b27d59",
+      "metadataTypeId": 2
+    },
+    {
+      "type": "enum MarketError",
+      "concreteTypeId": "f8861f324ef07554e280ad4f5ea8e4ae4a3e5e740c7bd47abb93b5b14bae91ea",
+      "metadataTypeId": 3
+    },
+    {
+      "type": "enum RegistrationValidityError",
+      "concreteTypeId": "faa4d83941e446917f7b75860858d1822e4f34da1b9bf2de64e4d1297da4bfd9",
+      "metadataTypeId": 4
+    },
+    {
+      "type": "enum std::identity::Identity",
+      "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335",
+      "metadataTypeId": 5
+    },
+    {
+      "type": "enum std::option::Option<struct Market>",
+      "concreteTypeId": "0305d92a544bc802089928ebd8103aff0cb3499141048cb42efcb48b17b83b1d",
+      "metadataTypeId": 6,
+      "typeArguments": [
+        "f534b2f13175c7ad8e368a259c8dcc778f14e59d184ecf3053f5ac5ef34516f0"
+      ]
+    },
+    {
+      "type": "enum std::option::Option<struct Record>",
+      "concreteTypeId": "234d92b91009554b44fed00dcf28b8084f9a61da45cc014f0001ca2db98fe388",
+      "metadataTypeId": 6,
+      "typeArguments": [
+        "e6ed22762fc80dab3ba65836dad3dd2d198a5c357890b5f216bbabd5214e2cec"
+      ]
+    },
+    {
+      "type": "enum std::option::Option<struct std::string::String>",
+      "concreteTypeId": "7c06d929390a9aeeb8ffccf8173ac0d101a9976d99dda01cce74541a81e75ac0",
+      "metadataTypeId": 6,
+      "typeArguments": [
+        "9a7f1d3e963c10e0a4ea70a8e20a4813d1dc5682e28f74cb102ae50d32f7f98c"
+      ]
+    },
+    {
+      "type": "str",
+      "concreteTypeId": "8c25cb3686462e9a86d2883c5688a22fe738b0bbc85f458d2d2b5f3f667c6d5a"
+    },
+    {
+      "type": "struct BuyEvent",
+      "concreteTypeId": "6630697c7d77a74993006d834cf47bbc426d4187d2540d3fbe915ed7f691cabb",
+      "metadataTypeId": 9
+    },
+    {
+      "type": "struct DelistEvent",
+      "concreteTypeId": "e1bc92e1718d94d52e42d804ea02140ef728ed06f34003c86ef94b40125d9ae6",
+      "metadataTypeId": 10
+    },
+    {
+      "type": "struct ListEvent",
+      "concreteTypeId": "a398c5cc65b4c0deb5de4380c6f0f73e1e1a0f7001de1c45cff317f258f635e7",
+      "metadataTypeId": 11
+    },
+    {
+      "type": "struct Market",
+      "concreteTypeId": "f534b2f13175c7ad8e368a259c8dcc778f14e59d184ecf3053f5ac5ef34516f0",
+      "metadataTypeId": 12
+    },
+    {
+      "type": "struct NameExtendEvent",
+      "concreteTypeId": "314ab4d2c76125633b2f9be07a92bbd39fc5b00fd5cc80be0f7204d4e37898dc",
+      "metadataTypeId": 13
+    },
+    {
+      "type": "struct NameRegisteredEvent",
+      "concreteTypeId": "4d3f6bb26ac1551805452c7090ddc198a096ff3654de812e0ea5464e0ec0720a",
+      "metadataTypeId": 14
+    },
+    {
+      "type": "struct NameTransferEvent",
+      "concreteTypeId": "06132ef53a28b4c1ada26a2bc2d6d4243d4626d285732f629db668f876e5f011",
+      "metadataTypeId": 15
+    },
+    {
+      "type": "struct Record",
+      "concreteTypeId": "e6ed22762fc80dab3ba65836dad3dd2d198a5c357890b5f216bbabd5214e2cec",
+      "metadataTypeId": 16
+    },
+    {
+      "type": "struct ResolvingEvent",
+      "concreteTypeId": "280ee7b578c1e834c1c9f9b1796f20a9d19ef026c04dc9060eb3546147a4b6e9",
+      "metadataTypeId": 17
+    },
+    {
+      "type": "struct std::string::String",
+      "concreteTypeId": "9a7f1d3e963c10e0a4ea70a8e20a4813d1dc5682e28f74cb102ae50d32f7f98c",
+      "metadataTypeId": 22
+    },
+    {
+      "type": "u64",
+      "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+    }
+  ],
+  "metadataTypes": [
+    {
+      "type": "b256",
+      "metadataTypeId": 0
+    },
+    {
+      "type": "enum AssetError",
+      "metadataTypeId": 1,
+      "components": [
+        {
+          "name": "InsufficientPayment",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "IncorrectAssetSent",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        }
+      ]
+    },
+    {
+      "type": "enum AuthorizationError",
+      "metadataTypeId": 2,
+      "components": [
+        {
+          "name": "SenderNotOwner",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "NameAlreadySolved",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "NameExpired",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        }
+      ]
+    },
+    {
+      "type": "enum MarketError",
+      "metadataTypeId": 3,
+      "components": [
+        {
+          "name": "NameNotlisted",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        }
+      ]
+    },
+    {
+      "type": "enum RegistrationValidityError",
+      "metadataTypeId": 4,
+      "components": [
+        {
+          "name": "NameNotRegistered",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "NameNotExpired",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "NameTooShort",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        }
+      ]
+    },
+    {
+      "type": "enum std::identity::Identity",
+      "metadataTypeId": 5,
+      "components": [
+        {
+          "name": "Address",
+          "typeId": 18
+        },
+        {
+          "name": "ContractId",
+          "typeId": 21
+        }
+      ]
+    },
+    {
+      "type": "enum std::option::Option",
+      "metadataTypeId": 6,
+      "components": [
+        {
+          "name": "None",
+          "typeId": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d"
+        },
+        {
+          "name": "Some",
+          "typeId": 7
+        }
+      ],
+      "typeParameters": [
+        7
+      ]
+    },
+    {
+      "type": "generic T",
+      "metadataTypeId": 7
+    },
+    {
+      "type": "raw untyped ptr",
+      "metadataTypeId": 8
+    },
+    {
+      "type": "struct BuyEvent",
+      "metadataTypeId": 9,
+      "components": [
+        {
+          "name": "time",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "price",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "name",
+          "typeId": 22
+        },
+        {
+          "name": "buyer",
+          "typeId": 5
+        },
+        {
+          "name": "seller",
+          "typeId": 5
+        }
+      ]
+    },
+    {
+      "type": "struct DelistEvent",
+      "metadataTypeId": 10,
+      "components": [
+        {
+          "name": "name",
+          "typeId": 22
+        },
+        {
+          "name": "identity",
+          "typeId": 5
+        }
+      ]
+    },
+    {
+      "type": "struct ListEvent",
+      "metadataTypeId": 11,
+      "components": [
+        {
+          "name": "name",
+          "typeId": 22
+        },
+        {
+          "name": "owner",
+          "typeId": 5
+        },
+        {
+          "name": "price",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct Market",
+      "metadataTypeId": 12,
+      "components": [
+        {
+          "name": "owner",
+          "typeId": 5
+        },
+        {
+          "name": "price",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct NameExtendEvent",
+      "metadataTypeId": 13,
+      "components": [
+        {
+          "name": "addtime",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "name",
+          "typeId": 22
+        },
+        {
+          "name": "identity",
+          "typeId": 5
+        }
+      ]
+    },
+    {
+      "type": "struct NameRegisteredEvent",
+      "metadataTypeId": 14,
+      "components": [
+        {
+          "name": "starttime",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "expiry",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "name",
+          "typeId": 22
+        },
+        {
+          "name": "identity",
+          "typeId": 5
+        }
+      ]
+    },
+    {
+      "type": "struct NameTransferEvent",
+      "metadataTypeId": 15,
+      "components": [
+        {
+          "name": "name",
+          "typeId": 22
+        },
+        {
+          "name": "from",
+          "typeId": 5
+        },
+        {
+          "name": "to",
+          "typeId": 5
+        }
+      ]
+    },
+    {
+      "type": "struct Record",
+      "metadataTypeId": 16,
+      "components": [
+        {
+          "name": "expiry",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        },
+        {
+          "name": "identity",
+          "typeId": 5
+        }
+      ]
+    },
+    {
+      "type": "struct ResolvingEvent",
+      "metadataTypeId": 17,
+      "components": [
+        {
+          "name": "name",
+          "typeId": 22
+        },
+        {
+          "name": "identity",
+          "typeId": 5
+        }
+      ]
+    },
+    {
+      "type": "struct std::address::Address",
+      "metadataTypeId": 18,
+      "components": [
+        {
+          "name": "bits",
+          "typeId": 0
+        }
+      ]
+    },
+    {
+      "type": "struct std::bytes::Bytes",
+      "metadataTypeId": 19,
+      "components": [
+        {
+          "name": "buf",
+          "typeId": 20
+        },
+        {
+          "name": "len",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct std::bytes::RawBytes",
+      "metadataTypeId": 20,
+      "components": [
+        {
+          "name": "ptr",
+          "typeId": 8
+        },
+        {
+          "name": "cap",
+          "typeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ]
+    },
+    {
+      "type": "struct std::contract_id::ContractId",
+      "metadataTypeId": 21,
+      "components": [
+        {
+          "name": "bits",
+          "typeId": 0
+        }
+      ]
+    },
+    {
+      "type": "struct std::string::String",
+      "metadataTypeId": 22,
+      "components": [
+        {
+          "name": "bytes",
+          "typeId": 19
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "inputs": [
+        {
+          "name": "name_str",
+          "concreteTypeId": "8c25cb3686462e9a86d2883c5688a22fe738b0bbc85f458d2d2b5f3f667c6d5a"
+        }
+      ],
+      "name": "buy",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_amount",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "claim",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "name_str",
+          "concreteTypeId": "8c25cb3686462e9a86d2883c5688a22fe738b0bbc85f458d2d2b5f3f667c6d5a"
+        }
+      ],
+      "name": "delist",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "name_str",
+          "concreteTypeId": "8c25cb3686462e9a86d2883c5688a22fe738b0bbc85f458d2d2b5f3f667c6d5a"
+        },
+        {
+          "name": "_year",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "extend",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "get_basepercent",
+      "output": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [],
+      "name": "get_baseprice",
+      "output": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "name_str",
+          "concreteTypeId": "8c25cb3686462e9a86d2883c5688a22fe738b0bbc85f458d2d2b5f3f667c6d5a"
+        }
+      ],
+      "name": "get_market",
+      "output": "0305d92a544bc802089928ebd8103aff0cb3499141048cb42efcb48b17b83b1d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "identity",
+          "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335"
+        }
+      ],
+      "name": "get_name",
+      "output": "7c06d929390a9aeeb8ffccf8173ac0d101a9976d99dda01cce74541a81e75ac0",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "name_str",
+          "concreteTypeId": "8c25cb3686462e9a86d2883c5688a22fe738b0bbc85f458d2d2b5f3f667c6d5a"
+        }
+      ],
+      "name": "get_record",
+      "output": "234d92b91009554b44fed00dcf28b8084f9a61da45cc014f0001ca2db98fe388",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "name_str",
+          "concreteTypeId": "8c25cb3686462e9a86d2883c5688a22fe738b0bbc85f458d2d2b5f3f667c6d5a"
+        },
+        {
+          "name": "_price",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "list",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "name_str",
+          "concreteTypeId": "8c25cb3686462e9a86d2883c5688a22fe738b0bbc85f458d2d2b5f3f667c6d5a"
+        },
+        {
+          "name": "_year",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "register",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "payable",
+          "arguments": []
+        },
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "name_str",
+          "concreteTypeId": "8c25cb3686462e9a86d2883c5688a22fe738b0bbc85f458d2d2b5f3f667c6d5a"
+        }
+      ],
+      "name": "resolving",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_percent",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "set_basepercent",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "_price",
+          "concreteTypeId": "1506e6f44c1d6291cdf46395a8e573276a4fa79e8ace3fc891e092ef32d1b0a0"
+        }
+      ],
+      "name": "set_baseprice",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    },
+    {
+      "inputs": [
+        {
+          "name": "name_str",
+          "concreteTypeId": "8c25cb3686462e9a86d2883c5688a22fe738b0bbc85f458d2d2b5f3f667c6d5a"
+        },
+        {
+          "name": "recev",
+          "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335"
+        }
+      ],
+      "name": "tranfer",
+      "output": "2e38e77b22c314a449e91fafed92a43826ac6aa403ae6a8acb6cf58239fbaf5d",
+      "attributes": [
+        {
+          "name": "storage",
+          "arguments": [
+            "read",
+            "write"
+          ]
+        }
+      ]
+    }
+  ],
+  "loggedTypes": [
+    {
+      "logId": "17908035269218563412",
+      "concreteTypeId": "f8861f324ef07554e280ad4f5ea8e4ae4a3e5e740c7bd47abb93b5b14bae91ea"
+    },
+    {
+      "logId": "18060798146092746385",
+      "concreteTypeId": "faa4d83941e446917f7b75860858d1822e4f34da1b9bf2de64e4d1297da4bfd9"
+    },
+    {
+      "logId": "2080303076580887568",
+      "concreteTypeId": "1cdeb8a050c18c100950e5790e7bc401ceeef73fe308b42d02dc93819ddc1646"
+    },
+    {
+      "logId": "7363501374152615753",
+      "concreteTypeId": "6630697c7d77a74993006d834cf47bbc426d4187d2540d3fbe915ed7f691cabb"
+    },
+    {
+      "logId": "9656209222076154788",
+      "concreteTypeId": "8601bf206eb343a46c6b13f30a0bc7b484673024f54a69bdc6f2f963b3b27d59"
+    },
+    {
+      "logId": "16266037451125789909",
+      "concreteTypeId": "e1bc92e1718d94d52e42d804ea02140ef728ed06f34003c86ef94b40125d9ae6"
+    },
+    {
+      "logId": "3551850073516221795",
+      "concreteTypeId": "314ab4d2c76125633b2f9be07a92bbd39fc5b00fd5cc80be0f7204d4e37898dc"
+    },
+    {
+      "logId": "11788389506312618206",
+      "concreteTypeId": "a398c5cc65b4c0deb5de4380c6f0f73e1e1a0f7001de1c45cff317f258f635e7"
+    },
+    {
+      "logId": "5566286078492628248",
+      "concreteTypeId": "4d3f6bb26ac1551805452c7090ddc198a096ff3654de812e0ea5464e0ec0720a"
+    },
+    {
+      "logId": "2886499177792137268",
+      "concreteTypeId": "280ee7b578c1e834c1c9f9b1796f20a9d19ef026c04dc9060eb3546147a4b6e9"
+    },
+    {
+      "logId": "437745219562681537",
+      "concreteTypeId": "06132ef53a28b4c1ada26a2bc2d6d4243d4626d285732f629db668f876e5f011"
+    }
+  ],
+  "messagesTypes": [],
+  "configurables": [
+    {
+      "name": "ADMIN",
+      "concreteTypeId": "ab7cd04e05be58e3fc15d424c2c4a57f824a2a2d97d67252440a3925ebdc1335",
+      "offset": 52952
+    }
+  ]
+}
