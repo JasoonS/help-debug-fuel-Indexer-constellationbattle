@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=./node_modules/envio/fuel.schema.json
+name: game
+ecosystem: fuel
+networks:
+- id: 0
+  start_block: 3198731
+  contracts:
+  - name: game
+    address:
+    - 0xe2817618615ebb756783c65939ebad3eed3dc8ffb7cb671062fa2fa26071179f
+    abi_file_path: abis/game-abi.json
+    handler: ./src/EventHandlers.js
+    events:
+    - name: UpdateWeightPoolEvent
+      logId: '7780239732579855548'
+    - name: ListEvent
+      logId: '11788389506312618206'
+    - name: DeListEvent
+      logId: '14131060276219336411'
+    - name: EnterPoolEvent
+      logId: '16171128577654248856'
+    - name: BattleEvent
+      logId: '17747894352987907076'
+  - name: name
+    address:
+    - 0x4178cf04e91816da7cf078141dcb275d4e637cfde8a21a68cb0baa7bee7be1eb
+    abi_file_path: abis/name-abi.json
+    handler: ./src/EventHandlers.js
+    events:
+    - name: NameExtendEvent
+      logId: '3551850073516221795'
+    - name: DelistEvent
+      logId: '16266037451125789909'
+    - name: ListEvent
+      logId: '11788389506312618206'
+    - name: NameRegisteredEvent
+      logId: '5566286078492628248'
+    - name: ResolvingEvent
+      logId: '2886499177792137268'
+    - name: NameTransferEvent
+      logId: '437745219562681537'
+    - name: BuyEvent
+      logId: '7363501374152615753'
